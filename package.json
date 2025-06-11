@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "beautiful":"lint-staged",
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch  src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,16 +22,15 @@
   },
   "homepage": "https://github.com/tutute207/nodejs_blog#readme",
   "description": "",
-
-  "lint-staged":{
-    "src/**/*.{js,json,scss}":"prettier --single-quote --trailing-comma all --write"
+  
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   },
-
   "dependencies": {
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3"
