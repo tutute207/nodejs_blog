@@ -22,10 +22,17 @@
   },
   "homepage": "https://github.com/tutute207/nodejs_blog#readme",
   "description": "",
+
   "lint-staged":{
     "src/**/*.{js,json,scss}":"prettier --single-quote --trailing-comma all --write"
   },
-
+  "husky":{
+    "hooks":{
+      "pre-commit":"npm test",
+      "pre-push":"npm test",
+      "...":"..."
+    }
+  },
 
   "dependencies": {
     "express": "^5.1.0",
